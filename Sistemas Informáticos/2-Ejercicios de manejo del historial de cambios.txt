@@ -1,0 +1,57 @@
+Ejercicio 1
+
+git log //Muestra el historial de cambios del repositorio.
+
+mkdir capitulos //Crea el directorio "capitulos".
+
+cat > capitulos/capitulo1.txt //Crea dentro del directorio "capitulos" el fichero "capitulo1.txt" con el siguiente contenido.
+Git es un sistema de control de versiones ideado por Linus Torvalds. //Contenido.
+
+Ctrl+D //Atajo de teclado para salir y guardar el fichero.
+
+git add . //Añade los cambios a la zona de intercambio temporal.
+
+git commit -m "Añadido capítulo 1." //Hace un commit de los cambios con el mensaje puesto.
+
+git log //Muestra el historial de cambios del repositorio.
+
+Ejercicio 2
+
+cat > capitulos/capitulo2.txt //Crea dentro del directorio "capitulos" el fichero "capitulo2.txt" con el siguiente contenido.
+El flujo de trabajo básico con Git consiste en: //Contenido.
+1- Hacer cambios en el repositorio. //Contenido.
+2- Añadir los cambios a la zona de intercambio temporal. //Contenido.
+3- Hacer un commit de los cambios. //Contenido.
+
+Ctrl+D //Atajo de teclado para salir y guardar el fichero.
+
+git add . //Añade los cambios a la zona de intercambio temporal.
+
+git commit -m "Añadido capítulo 2." //Hace un commit de los cambios con el mensaje puesto.
+
+git diff HEAD~2..HEAD //Muestra las diferencias entre la última versión y dos versiones anteriores.
+
+Ejericicio 3
+
+cat > capitulos/capitulo3.txt //Crea dentro del directorio "capitulos" el fichero "capitulo3.txt" con el siguiente contenido.
+Git permite la creación de ramas lo que permite tener distintas versiones del mismo proyecto y trabajar de manera simultanea en ellas. //Contenido.
+
+Ctrl+D //Atajo de teclado para salir y guardar el fichero.
+
+git add . //Añade los cambios a la zona de intercambio temporal.
+
+git commit -m "Añadido capítulo 3." //Hace un commit de los cambios con el mensaje puesto.
+
+git log //Muestra el historial de cambios del repositorio.
+
+git diff "El código hash de la primera version"..HEAD >> En este caso: git diff 8c808..HEAD //Muestra las diferencias entre la primera y la última versión del repositorio.
+
+Ejercicio 4
+
+echo "Capítulo 5: Conceptos avanzados" >> indice.txt //Añade al final del fichero "indice.txt" la siguiente línea.
+
+git add . //Añade los cambios a la zona de intercambio temporal.
+
+git commit -m "Añadido capítulo 5 al índice." //Hace un commit de los cambios con el mensaje puesto.
+
+git annotate indice.txt //Muestra quién ha hecho cambios sobre el fichero indice.txt.

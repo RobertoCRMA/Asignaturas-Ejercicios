@@ -1,0 +1,35 @@
+Ejercicio 1
+
+git remote add origin https://github.com/RobertoCRMA/libro-git.git //Sincroniza el repositorio local con el remoto.
+
+git remote -v //Muestra todos los repositorios remotos configurados.
+
+Ejercicio 2
+
+git push -u origin master //Sube los cambios del repositorio local al repositorio remoto.
+
+Ejercicio 3
+
+git clone https://github.com/sebascedano/libro-git.git //Clona el repositorio de Sebastian siendo colaborador de su repositorio.
+
+echo Sebastian Cedano > autores.txt //Crea el fichero "autores.txt" y añade el usuario de Sebastian.
+
+echo sebascedano99@gmail.com >> autores.txt //Añade al fichero "autores.txt" el correo de Sebastian.
+
+git add . //Añade los cambios.
+
+git commit -m "Añadido autor." //Hace un commit de los cambios con un mensaje.
+
+git push origin master //Sube los cambios al repositorio remoto.
+
+Ejercicio 4
+
+git clone https://github.com/RobertoCRMA/libro-git-2.git //Clona el repositorio remoto bifurcado de "asalber/libro-git".
+
+git checkout -b autoria
+
+echo RobertoCRMA (rcmaxyz@gmail.com) >> autores.txt //Añade mi usuario y correo de github al fichero "autores.txt".
+
+git commit -am "Añadido nuevo autor." //Añade los cambios y hace un commi con este mensaje.
+
+git push origin autoria //Sube los cambios al repositorio remoto bifurcado de "asalber/libro-git".
